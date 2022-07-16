@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: hsl(204, 43%, 93%);
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.wrapper{
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "a a" "b c";
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.box{
+    padding: 30px;
+}
+
+.join{
+    grid-area: a;
+}
+
+.sub{
+    background-color: hsl(179, 62%, 43%);
+    grid-area: b;
+}
+
+h1{
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+h3{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 10px;
+    
+}
+
+.join p{
+    color: hsl(218, 22%, 67%);
+    line-height: 1.6;
+}
+
+h2{
+    font-size: 20px;
+    color: white;
+    padding-bottom: 15px;
+}
+
+h5{
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+h5 span.price{
+    color: white;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+h5 span{
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+}
+
+.sub p{
+    color: white;
+    padding-bottom: 20px;
+    font-size: 14px;
+}
+
+.sub a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: hsl(71, 73%, 54%);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.why{
+    background-color: hsl(179, 62%, 53%);
+    grid-area: c;
+}
+
+.why ul{
+    color: hsl(204, 43%, 93%);
+    list-style: none;
+}
+
+.why li{
+    padding-bottom: 3px;
+    font-size: 14px;
+}
+
+@media (max-width: 425px){
+    .wrapper{
+        grid-template-columns: 1fr;
+        grid-template-areas: "a" "b" "c";
+    }
+}
